@@ -7,6 +7,7 @@ angular.module("rtfmApp")
 
       saveUsername: function (username) {
         $window.localStorage.setItem('username', username);
+        debugger;
       },
 
       getUsername: function () {

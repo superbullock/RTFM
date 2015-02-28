@@ -5,7 +5,7 @@ angular.module('rtfmApp')
 
     $scope.logMeIn = function (username) {
       EnvironmentService.saveUsername(username);
-      $scope.username = '';
+      $scope.myUsername = '';
       $location.path('/threads');
     }
 
