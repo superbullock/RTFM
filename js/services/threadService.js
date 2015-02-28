@@ -10,8 +10,11 @@ angular.module('rtfmApp').service('threadService', function ThreadService(Enviro
 
     getThread: function (threadId) {
       return $firebase(new Firebase(firebaseUrl + '/threads/' + threadId));
-    }
+    },
 
+    getComments: function(threadId) {
+      return $firebase(new Firebase(firebaseUrl + '/threads/' + threadId + '/comments'));
+    }
   }
 
 });

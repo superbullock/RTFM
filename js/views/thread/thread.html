@@ -1,1 +1,18 @@
-{{thread.title}}
+<div>
+  <a href="#/threads">Back to Threads List</a>
+
+  <h1>{{thread.title}} <span class="small">(by {{ thread.username }})</span></h1>
+  <br/>
+
+  <form name="newCommentForm" ng-submit="createComment(username, newCommentText)">
+    <textarea ng-model="newCommentText" placeholder="Write a comment here..." rows="3" cols="50" required></textarea>
+    <br/>
+    <button ng-disabled="newCommentForm.$invalid" class="btn btn-success">Submit Comment</button>
+  </form>
+  <hr>
+  <ul>
+    <li ng-repeat="comment in comments"><strong>{{ comment.username }}:</strong> {{ comment.text }} <hr/></li>
+
+  </ul>
+
+</div>
