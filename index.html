@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="rtfmApp">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <h3>RTFM App <span class="small">BETA</span></h3>
+  </div>
+  <div class="container" ng-view></div>
+
+
+
+  <script src="js/env.js"></script>
+
+
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+
+
+  <script src="js/app.js"></script>
+  <script src="js/views/login/login.js"></script>
+  <script src="js/services/environService.js"></script>
+  <script src="js/views/threads/threadsCtrl.js"></script>
+  <script src="js/services/threadService.js"></script>
+  <script src="js/views/thread/thread.js"></script>
+  
+</body>
+
+</html>
